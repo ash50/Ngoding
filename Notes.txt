@@ -1,0 +1,69 @@
+#Catatan 18/12/2022 Sesi VCS (Version Control Service) (2)
+git
+github
+gitlab
+
+check ada dokumen "U" ga kalau iya harus di identify dulu agar ready di push ke repository githuyb‎
+
+password pada saat upload github bukan password login tapi pasword token yg di generate
+
+proses cloning : mengcopy project github agar ada di local git clone "link"
+
+-Create Folder
+    mkdir
+
+-git audit
+    melihat history yang ada di repository
+    command : git log or insight tab via remote repository (github)
+
+git log
+    git show <commit-id> --stat
+    git show <filepath/filename>
+    git log --graph --decorate --oneline
+
+-github insight
+    melihat aktivitas project
+
+
+-branch git
+fitur untuk membagi project A dengan fitur a dan b yang berbeda (ibarat ada CR bisa ke b, jadi yg a aman ga terpengaruh)
+
+-show branch
+    git status
+    git branch
+    git branch -a
+
+-create branch
+    git checkout -b <branch_name>
+
+-switch between branch
+    git switch <branch-name> or
+    git checkout <branch_name>
+
+-Merging and Rebasing
+    #Merging : menggabungkan main / antar branch dengan branch lainnya
+        git merge <branch-name>
+
+
+    #Switching 
+        git switch <branch-name> or 
+        git checkout <branch-name>
+
+    #Rebasing
+        menggabungkan atau menggeser commit base
+
+- git worklfow
+    skema git  untuk melihat master branch, commit base, dll
+
+- common worklfow 
+    forking project orang ke repository kita
+    Clone Forked project to local
+    begin working base on forking project
+    push new feature
+    to include your feature in main project orang, begin pull request ke project dia (kalau di approve pemiliki project artinya nanti masuk ke main reponya dia)
+
+- Merge Conflict
+    terjadi pada saat perubahan satu file yang sama di rubah di branch berbeda abis itu di merg bareng (bukan merge a dulu baru merge b)
+        solusi adalah dengan solved by hand a.k.a manual
+    untuk menghindari konflik diatas, better koordinasi terlebih dahulu / membuat file baru
+    
